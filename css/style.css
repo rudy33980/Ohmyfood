@@ -136,7 +136,7 @@ header img {
 .functioning {
   width: 85%;
   margin: 0 auto;
-  color: #ffffff;
+  background-color: #ffffff;
 }
 .functioning h2 {
   font-size: 30px;
