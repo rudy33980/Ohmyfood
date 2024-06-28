@@ -42,8 +42,10 @@
 }
 
 .functioning {
-  width: 85%;
+  padding-bottom: 30px;
   margin: 0 auto;
+  background: $white;
+  @include flexCenter;
 
   h2 {
     font-size: 30px;
@@ -56,9 +58,10 @@
     @include fonctioning;
     @include flexAlign;
     color: grey;
+    width: 85%;
 
     &:hover {
-      background: $secondary-color;
+      background: lighten( $primary-color,28%);
       opacity: 0.5;
       color: black;
 
@@ -120,6 +123,7 @@
       border-radius: 20px 20px 0 0;
       width: 100%;
       object-fit: cover;
+      object-position: center;
       height: 200px;
     }
 

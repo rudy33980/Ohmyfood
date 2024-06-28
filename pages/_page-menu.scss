@@ -25,6 +25,7 @@ main {
   transform: translateY(-70px);
 
   .title_meal {
+    width: 100%;
     display: flex;
     align-items: center;
     height: 50px;
@@ -202,12 +203,18 @@ main {
         grid-column: 1/-1;
         h1 {
           font-size: 3rem;
+
+        }
+        i {
+          @include heart-animated;
+          top: 5%;
         }
       }
     }
   }
   .order {
     grid-column: 2/-2;
-    width: 30%;
+    width: 40%;
+
   }
 }

@@ -134,8 +134,13 @@ header img {
 }
 
 .functioning {
-  width: 85%;
+  padding-bottom: 30px;
   margin: 0 auto;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .functioning h2 {
   font-size: 30px;
@@ -153,11 +158,12 @@ header img {
   justify-content: center;
   align-items: center;
   color: grey;
+  width: 85%;
 }
 .functioning .choose:hover,
 .functioning .compose:hover,
 .functioning .taste:hover {
-  background: #ff79da;
+  background: #dfccf5;
   opacity: 0.5;
   color: black;
 }
@@ -222,6 +228,7 @@ header img {
   border-radius: 20px 20px 0 0;
   width: 100%;
   object-fit: cover;
+  object-position: center;
   height: 200px;
 }
 .section-menu .card .new-menu,
@@ -488,6 +495,7 @@ main {
   transform: translateY(-70px);
 }
 .block__meal .title_meal {
+  width: 100%;
   display: flex;
   align-items: center;
   height: 50px;
@@ -497,7 +505,7 @@ main {
   color: black;
   font-size: 2rem;
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   top: 3%;
   transform: translate(-50%);
 }
@@ -1691,9 +1699,31 @@ main {
   main .block__meal .title_meal h1 {
     font-size: 3rem;
   }
+  main .block__meal .title_meal i {
+    top: 5%;
+  }
+  main .block__meal .title_meal i i {
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 3%;
+    transform: translate(-50%);
+  }
+  main .block__meal .title_meal i .fas::before {
+    background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+    color: transparent;
+    background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+  }
+  main .block__meal .title_meal i .fas:hover::before {
+    opacity: 1;
+    transform: translate(-50%) scale(1.1);
+  }
   .order {
     grid-column: 2/-2;
-    width: 30%;
+    width: 40%;
   }
 }
 button {
